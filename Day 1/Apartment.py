@@ -1,9 +1,9 @@
 import re
+import os
 
-data = open("apartmentInput.txt", "r")
+data = open("Day 1\\apartmentInput.txt", "r")
+data = data.read()
 increase = int(data.count("("))
 decrease = int(data.count(")"))
 
-output = increase+decrease
-
-print(output)
+print(increase - decrease)
